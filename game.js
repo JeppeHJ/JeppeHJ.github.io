@@ -18,15 +18,14 @@ let level = 0; // The current level of the game
 /**
  * Starts the game when the space bar is pressed.
  */
-$(document).keypress(function(event) {
-    // Only start the game if the space bar is pressed
-    if (event.which === 32 && !started) {
-      level = 1;
-      $("#level-title").text("Level " + level);
-      nextSequence();
-      started = true;
-    }
-  });
+
+$(".start").click(function() {
+    level = 1;
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+);
 
 /**
  * Handles a button click event.
@@ -127,5 +126,5 @@ function gameOver() {
     userClickedPattern = []; // Reset the user's clicked pattern
     gamePattern = []; // Reset the game pattern
 
-    $("#level-title").text("Du fuckede up, skat. Godt du er jurist. Tryk på en knap for at forsøge igen"); // Update the title
+    $("#level-title").text("Du fuckede up, skat. Godt du er jurist."); // Update the title
   }
