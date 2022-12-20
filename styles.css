@@ -26,11 +26,9 @@ body {
   border-radius: 20%;
 }
 
-.start {
-  scale: 500%;
-  margin: 85px;
-  margin-bottom: 65px;
-  width: 50px;
+.start {  
+  width: 100px;
+  height: 100px;
   border: 1px solid black;
 }
 
