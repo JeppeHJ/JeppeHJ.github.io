@@ -1,2 +1,2 @@
 # JeppeHJ.github.io
-Lolse
+Simple memory-game written in JavaScript to practice JS, HTML and CSS.
